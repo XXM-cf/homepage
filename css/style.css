@@ -1,0 +1,570 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+        background: #E6E6FA
+    }
+
+    .header {
+        background: url('../img/banner2.jpg') no-repeat;
+        background-size: cover;
+        width: 100%;
+        min-width: 1200px;
+        height: 300px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+
+    .header .bg {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        margin: 50px auto;
+        /* border: 1px solid red; */
+        /* background: url('../img/sleep16.gif') no-repeat; */
+        /* background-size: cover; */
+        background-position: -139px -171px;
+    }
+
+    .me {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        right: 150px;
+        top: -20px;
+        transform: rotate(-20deg);
+        z-index: 10;
+        background: url('../img/bg2.png') no-repeat;
+        background-size: 120%;
+        /* background-position: -50px -400px; */
+    }
+
+    .me .content {
+        width: 230px;
+        height: 200px;
+        margin-top: 80px;
+        position: relative;
+        z-index: 100;
+        margin: 50px;
+        padding: 10px;
+        padding-top: 30px;
+        /* text-align: center; */
+    }
+
+    .me .content p {
+        height: 36px;
+        line-height: 36px;
+    }
+
+    .me .content p a {
+        font-size: 12px;
+    }
+
+    .me .content p span {
+        font-size: 14px;
+        color: #808080;
+    }
+
+    .content {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    /* //HTML页面部分 */
+
+    .box1 {
+        width: 1200px;
+        /* height: 680px; */
+        position: relative;
+        background: #f1f1f1;
+        margin-bottom: 20px;
+    }
+
+    .box2,
+    .box3,
+    .box4,
+    .box5 {
+        background: #f1f1f1;
+    }
+
+    .box4 {
+        margin: 20px auto;
+    }
+
+    .page_list {
+        width: 1200px;
+        position: relative;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .page_dis {
+        height: 40px;
+        line-height: 40px;
+        width: 1200px;
+        color: black;
+        font-size: 12px;
+        padding-left: 10px;
+    }
+
+    .page_list li {
+        float: left;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 285px;
+        height: 240px;
+        margin: 20px auto;
+        margin-left: 20px;
+    }
+
+    .flag {
+        margin-left: 0px!important;
+    }
+
+    .page {
+        width: 285px;
+        height: 240px;
+        background: #F0F8FF;
+        overflow: hidden;
+        margin-bottom: 20px;
+        background: #696969;
+    }
+
+    .page:hover .dis {
+        bottom: 160px;
+        transition: all 0.6s;
+    }
+
+    .page .pic {
+        width: 285px;
+        height: 180px;
+        position: relative;
+        border: 1px solid #dcdcdc;
+        left: 0;
+        top: 0;
+    }
+
+    .page .pic img {
+        width: 285px;
+        height: 180px;
+    }
+
+    .title {
+        width: 285px;
+        height: 60px;
+        line-height: 60px;
+        padding-left: 18px;
+        font-family: "微软雅黑";
+        background: #fff;
+        font-size: 16px;
+        color: #3e3e3e;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .dis {
+        width: 285px;
+        height: 160px;
+        position: relative;
+        bottom: 0px;
+        left: 0;
+        background: #ffa700;
+    }
+
+    .dis .title2 {
+        font-size: 16px;
+        color: #fff;
+        height: 50px;
+        padding-left: 20px;
+        line-height: 50px;
+        width: 285px;
+        border-bottom: 1px solid #FFFAFA;
+    }
+
+    .date {
+        font-size: 12px;
+        color: #fff;
+        position: absolute;
+        right: 20px;
+        top: 60px;
+    }
+
+    .num {
+        font-size: 12px;
+        color: #fff;
+        position: absolute;
+        left: 20px;
+        top: 60px;
+    }
+
+    .down {
+        width: 90px;
+        height: 30px;
+        position: absolute;
+        bottom: 10px;
+        text-decoration: none;
+        border-radius: 6px;
+        text-align: center;
+        line-height: 30px;
+        color: #F5F5F5;
+        cursor: pointer;
+        background: #ADD8E6;
+        left: 50px;
+    }
+
+    .dome {
+        width: 90px;
+        height: 30px;
+        position: absolute;
+        bottom: 10px;
+        text-decoration: none;
+        border-radius: 6px;
+        text-align: center;
+        line-height: 30px;
+        color: #F5F5F5;
+        cursor: pointer;
+        background: #FF7F50;
+        left: 160px;
+    }
+
+    .flag {
+        margin-left: 0px;
+    }
+
+    .tag {
+        width: 1200px;
+        height: 60px;
+        box-sizing: border-box;
+        line-height: 60px;
+        border-left: 10px solid #FF7F50;
+        border-bottom: 1px solid #C0C0C0;
+        padding-left: 20px;
+        font-size: 16px;
+        color: black;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    /* js解决方案 */
+
+    .box3 {
+        width: 1200px;
+        height: 850px;
+    }
+
+    .js_method li {
+        position: relative;
+        width: 210px;
+        height: 320px;
+        border: 1px solid #fff;
+        position: relative;
+        float: left;
+        margin-left: 35px;
+        margin-top: 30px;
+        background: #F5F5F5;
+        overflow: hidden;
+    }
+
+    .item_title {
+        width: 210px;
+        height: 40px;
+        line-height: 40px;
+        background: #FF7F50;
+        text-align: center;
+        color: #F0F8FF;
+        font-size: 16px;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .item_dis {
+        width: 190px;
+        margin: 10px auto;
+        font-size: 12px;
+        line-height: 20px;
+        height: 70px;
+        margin-bottom: 0px;
+    }
+
+    .js_method li:hover .item {
+        bottom: 0px;
+        transition: all 0.6s;
+    }
+    /* .js_method li:hover .item_title {
+        top: -40px;
+        transition: all 0.6s;
+    } */
+
+    .js_method li img {
+        width: 210px;
+        height: 160px;
+    }
+
+    .item {
+        width: 210px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background: #9370DB;
+        position: absolute;
+        left: 0;
+        bottom: -40px;
+    }
+
+    .item a {
+        display: block;
+        width: 80px;
+        height: 30px;
+        border-radius: 15px;
+        line-height: 30px;
+        text-align: center;
+        background: #dcdcdc;
+        font-size: 14px;
+        position: absolute;
+        bottom: 5px;
+        left: 60px;
+    }
+    /* Ps部分 */
+
+    .more {
+        width: 285px;
+        height: 240px;
+        border: 1px solid #dcdcdc;
+        position: relative;
+        z-index: 20;
+    }
+
+    .cacle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        background: #fff;
+        font-size: 30px;
+        text-align: center;
+        line-height: 100px;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        margin-top: -50px;
+        left: 50%;
+        margin-left: -50px;
+        cursor: pointer;
+    }
+
+    .cacle1 {
+        cursor: pointer;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        background: #dcdcdc;
+        font-size: 30px;
+        text-align: center;
+        line-height: 100px;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        margin-top: -50px;
+        left: 50%;
+        margin-left: -50px;
+    }
+
+    .Ps_Kuqi {
+        width: 285px;
+        height: 240px;
+        border: 1px solid;
+        position: absolute;
+        left: 0;
+        top: -265px;
+        background: #F0FFFF;
+    }
+
+    #ps_btn {
+        left: 100px;
+    }
+
+    #kuqi {
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    #kuqi:hover .Ps_Kuqi {
+        top: 0px;
+        transition: all 0.6s;
+    }
+
+    .Ps_Kuqi a {
+        width: 110px;
+        height: 40px;
+        margin: 10px;
+        line-height: 40px;
+        text-align: center;
+        float: left;
+        background: #6A5ACD;
+        color: #fff;
+        font-size: 12px;
+    }
+
+    .Ps_Kuqi p {
+        width: 285px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+    /* 图片效果部分 */
+
+    .box2 {
+        width: 1200px;
+        position: relative;
+        margin: 0 auto;
+        height: 760px;
+        margin-bottom: 20px;
+    }
+
+    .pic_list {
+        width: 1200px;
+        overflow: hidden;
+    }
+
+    .pic_list li {
+        width: 224px;
+        height: 300px;
+        margin-left: 20px;
+        background: #fff;
+        float: left;
+        margin-top: 20px;
+        border-top: 2px solid;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .pic_list li:hover .sub_title {
+        top: 0;
+        transition: all 0.3s;
+    }
+
+    #pic_btn {
+        width: 90px;
+        height: 30px;
+        position: absolute;
+        bottom: 20px;
+        text-decoration: none;
+        border-radius: 6px;
+        text-align: center;
+        line-height: 30px;
+        color: #F5F5F5;
+        cursor: pointer;
+        background: #ADD8E6;
+        left: 16px;
+    }
+
+    #pic_btn2 {
+        width: 90px;
+        height: 30px;
+        position: absolute;
+        bottom: 20px;
+        text-decoration: none;
+        border-radius: 6px;
+        text-align: center;
+        line-height: 30px;
+        color: #F5F5F5;
+        cursor: pointer;
+        background: #FF7F50;
+        left: 120px;
+    }
+
+    .pic_list li .txt {
+        width: 200px;
+        margin: 0 auto;
+        margin-top: 20px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .pic_list li img {
+        width: 224px;
+        height: 180px;
+    }
+
+    .pic_list li .sub_title {
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 30px;
+        font-size: 14px;
+        text-align: center;
+        background: #2196f3;
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        color: #fff;
+        line-height: 30px;
+        margin-left: -40px;
+        /* opacity: 0.5; */
+    }
+    /* game部分 */
+
+    .box5 {
+        margin-bottom: 50px;
+    }
+
+    .game_list {
+        width: 1200px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .game_list li {
+        margin-left: 20px;
+        float: left;
+    }
+
+    .game_list li .title {
+        background: #dcdcdc;
+    }
+
+    .look {
+        width: 224px;
+        height: 30px;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        background: #7B68EE;
+        overflow: hidden;
+    }
+
+    .look p {
+        width: 224px;
+        height: 30px;
+        line-height: 30px;
+        color: #fff;
+        text-align: center;
+        position: absolute;
+        top: 0;
+    }
+
+    .look:hover p {
+        top: -30px;
+        transition: all 0.3s;
+    }
+
+    .look:hover .collect_btn {
+        top: 0px;
+        transition: all 0.3s;
+    }
+
+    .look a {
+        display: inline-block;
+        width: 224px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        position: absolute;
+        top: 30px;
+        color: #fff;
+        text-decoration: none!important;
+    }
