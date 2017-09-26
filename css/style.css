@@ -40,7 +40,7 @@
         z-index: 10;
         background: url('../img/bg2.png') no-repeat;
         background-size: 120%;
-        /* background-position: -50px -400px; */
+        border: 1px solid red;
     }
 
     .me .content {
@@ -52,7 +52,6 @@
         margin: 50px;
         padding: 10px;
         padding-top: 30px;
-        /* text-align: center; */
     }
 
     .me .content p {
