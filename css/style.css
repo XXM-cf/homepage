@@ -40,7 +40,6 @@
         z-index: 10;
         background: url('../img/bg2.png') no-repeat;
         background-size: 120%;
-        border: 1px solid red;
     }
 
     .me .content {
