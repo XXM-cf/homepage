@@ -46,9 +46,9 @@ var pageDate = [{
         img_src: './img/page/xiaomi.png',
         title: '小米官网',
         down_src: 'http://owicnt566.bkt.clouddn.com/xiaomi.rar',
-        dome_src: 'https://xxm-cf.github.io/xiaomi/',
-        num: '查看：50次',
-        date: '2017/08/23',
+        dome_src: 'https://xxm-cf.github.io/xiaomi',
+        num: '查看：55次',
+        date: '2017/08/29',
         flag: '',
     },
     {
